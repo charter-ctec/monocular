@@ -3,7 +3,7 @@ entries:
   monocular:
   - apiVersion: v1
     appVersion: v0.5.3
-    created: 2017-11-15T09:24:07.112372023-07:00
+    created: 2017-11-15T10:02:08.370680983-07:00
     description: Monocular is a search and discovery front end for Helm Charts Repositories.
     digest: adf0b05ff11d71a60141bc5bb14023ad891a6b4f728b785d7cfe98eda00bfc07
     home: https://github.com/charter-ctec/monocular
@@ -16,4 +16,4 @@ entries:
     urls:
     - monocular-0.4.14.tgz
     version: 0.4.14
-generated: 2017-11-15T09:24:07.110102528-07:00
+generated: 2017-11-15T10:02:08.362964169-07:00
