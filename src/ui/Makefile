@@ -1,5 +1,5 @@
-IMAGE_REPO ?= bitnami/monocular-ui
-IMAGE_TAG ?= latest
+IMAGE_REPO ?= quay.io/charter-ctec/charter-ui
+IMAGE_TAG ?= v0.0.1
 
 ifeq "$(VERSION)" ""
 	override VERSION = dev
@@ -21,7 +21,7 @@ compile-aot:
 	yarn run compile-aot
 
 docker-build: compile-aot
-	docker build --pull --rm -t ${IMAGE_REPO}:${IMAGE_TAG} rootfs/
+	sudo docker build --pull --rm -t ${IMAGE_REPO}:${IMAGE_TAG} rootfs/
 
 set-version:
 	sed -i src/version.ts -e 's/dev/${VERSION}/'
