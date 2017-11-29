@@ -1,5 +1,5 @@
 IMAGE_REPO ?= quay.io/charter-ctec/charter-ui
-IMAGE_TAG ?= v1.0.0 
+IMAGE_TAG ?= latest 
 
 ifeq "$(VERSION)" ""
 	override VERSION = dev
